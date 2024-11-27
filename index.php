@@ -7,7 +7,7 @@ header("Content-Type: application/json");
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
 //To hanlde if request doesn't exist
-$request = isset($_GET['request']) ? explode("/", trim($_GET['request'], "/")) : [];
+$request = isset($_GET['id']) ? explode("/", trim($_GET['id'], "/")) : [];
 
 //How to handle HTTP Verb
 $requestMethod;
